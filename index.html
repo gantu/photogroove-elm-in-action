@@ -1,14 +1,21 @@
+
 <!doctype html>
 <html>
-  <head>
-     <link rel="stylesheet" href="http://elm-in-action.com/styles.css">
-     <link rel="stylesheet" href="http://elm-in-action.com/range-slider.css">
-  </head>
-  <body>
-    <div id="app"></div>
-    <script src="/app.js"></script>
-    <script>
-      Elm.Main.init({node: document.getElementById("app")});
-    </script>
-  </body>
+    <head>
+        <link rel="stylesheet" href="http://elm-in-action.com/styles.css">
+        <link rel="stylesheet" href="http://elm-in-action.com/range-slider.css">
+    </head>
+
+    <body>
+        <div id="app"></div>
+
+        <script src="http://elm-in-action.com/pasta.js"></script>
+        <script src="/app.js"></script>
+        <script>
+            var app = Elm.Main.init({
+                node: document.getElementById("app"),
+                flags: Pasta.version
+            });
+        </script>
+    </body>
 </html>
